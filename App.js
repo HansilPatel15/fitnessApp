@@ -5,7 +5,7 @@ export default class App extends PureComponent {
   render() {
     return (
       <View>
-        <Text> textInComponent </Text>
+        <Text> Fitness App </Text>
       </View>
     );
   }

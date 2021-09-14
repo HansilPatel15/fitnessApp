@@ -2,7 +2,13 @@ import React, {PureComponent} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 // import {createDrawerNavigator} from '@react-navigation/drawer';
-import {WelcomeScreen, SigninScreen} from '../Screen';
+import {
+  WelcomeScreen,
+  SigninScreen,
+  SignupEmailScreen,
+  SignupPassScreen,
+  MaleFemaleScreen,
+} from '../Screen';
 import {Screen} from '../Helper';
 
 const Stack = createStackNavigator();
@@ -15,6 +21,18 @@ export default class Router extends PureComponent {
         <Stack.Navigator screenOptions={{headerShown: false}}>
           <Stack.Screen name={Screen.WelcomeScreen} component={WelcomeScreen} />
           <Stack.Screen name={Screen.SigninScreen} component={SigninScreen} />
+          <Stack.Screen
+            name={Screen.SignupEmailScreen}
+            component={SignupEmailScreen}
+          />
+          <Stack.Screen
+            name={Screen.SignupPassScreen}
+            component={SignupPassScreen}
+          />
+          <Stack.Screen
+            name={Screen.MaleFemaleScreen}
+            component={MaleFemaleScreen}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     );

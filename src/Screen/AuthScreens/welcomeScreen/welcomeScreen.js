@@ -3,6 +3,7 @@ import {Text, View, TouchableOpacity, Image} from 'react-native';
 import {Images} from '../../../Helper';
 import {styles} from './welcomeScreenStyle';
 import AuthHeader from '../../../Componant/authHeader';
+import AuthButton from '../../../Componant/authButton';
 
 export default class welcomeScreen extends PureComponent {
   render() {
@@ -15,11 +16,19 @@ export default class welcomeScreen extends PureComponent {
           The Best Ui Kit for your next health and {'\n'} fitness app
         </Text>
         <Image source={Images.main_Screen} style={styles.mainImage} />
-        <TouchableOpacity>
+        <AuthButton
+          text="Get Started"
+          screen="SignupEmailScreen"
+          {...this.props}
+        />
+        {/* <TouchableOpacity
+          onPress={() => {
+            this.props.navigation.navigate('SignupEmailScreen');
+          }}>
           <View style={styles.btnColor}>
             <Text style={styles.btnText}>Get Started</Text>
           </View>
-        </TouchableOpacity>
+        </TouchableOpacity> */}
         <TouchableOpacity
           onPress={() => {
             this.props.navigation.navigate('SigninScreen');

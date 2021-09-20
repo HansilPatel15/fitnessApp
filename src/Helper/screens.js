@@ -4,6 +4,7 @@ const Screen = {
   SignupEmailScreen: 'SignupEmailScreen',
   SignupPassScreen: 'SignupPassScreen',
   MaleFemaleScreen: 'MaleFemaleScreen',
+  ProfilePictureScreen: 'ProfilePictureScreen',
 };
 
 export default Screen;

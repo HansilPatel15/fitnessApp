@@ -8,6 +8,7 @@ import {
   SignupEmailScreen,
   SignupPassScreen,
   MaleFemaleScreen,
+  ProfilePictureScreen,
 } from '../Screen';
 import {Screen} from '../Helper';
 
@@ -32,6 +33,10 @@ export default class Router extends PureComponent {
           <Stack.Screen
             name={Screen.MaleFemaleScreen}
             component={MaleFemaleScreen}
+          />
+          <Stack.Screen
+            name={Screen.ProfilePictureScreen}
+            component={ProfilePictureScreen}
           />
         </Stack.Navigator>
       </NavigationContainer>

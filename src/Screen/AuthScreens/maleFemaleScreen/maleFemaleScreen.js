@@ -21,7 +21,11 @@ export default class maleFemaleScreen extends PureComponent {
         <Text style={styles.toGive}>
           To give you a batter experience {'\n'} we need to know your gender
         </Text>
-        <AuthButton text="Continue" screen="" {...this.props} />
+        <AuthButton
+          text="Continue"
+          screen="ProfilePictureScreen"
+          {...this.props}
+        />
       </View>
     );
   }
